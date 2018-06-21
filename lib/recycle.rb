@@ -1,5 +1,52 @@
 ###### Code Your Solutions Here!!!
+first_recycle_bin =  {
+  "address"=>"E 227 St/Bronx River Pkway",
+  "site_type"=>"Subproperty",
+  "longitude"=>"-73.864223918",
+  "borough"=>"Bronx",
+  "latitude"=>"40.890848989",
+  "park_site_name"=>"227th St. Plgd"}
 
+second_recycle_bin = { 
+  "address"=>"Allerton Ave & Moshulu Pkway",
+  "site_type"=>"Subproperty",
+  "longitude"=>"-73.8771283938",
+  "borough"=>"Bronx",
+  "latitude"=>"40.8488907878",
+  "park_site_name"=>"Allerton Ballfields"}
+
+third_recycle_bin = {
+  "address"=>"Arthur Ave & 187 St",
+  "site_type"=>"Outdoor",
+  "longitude"=>"-73.887564999999995",
+  "borough"=>"Bronx",
+  "latitude"=>"40.85557",
+  "park_site_name"=>"Arthur Ave & E 187 St"}
+
+fourth_recycle_bin = {
+  "address"=>"895 Shore Road, Pelham Bay Park",
+  "site_type"=>"Outdoor ",
+  "longitude"=>"-73.805549",
+  "borough"=>"Bronx",
+  "latitude"=>"40.871864",
+  "park_site_name"=>"Barstow Mansion"}
+def address(first_recycle_bin)
+  first_recycle_bin["address"]
+end
+def borough(first_recycle_bin)
+  first_recycle_bin["borough"]
+end
+def all_keys(first_recycle_bin)
+  first_recycle_bin.each_key {|key| puts key}
+end 
+def all_data(first_recycle_bin)
+  first_recycle_bin.each_value {|value| puts value}
+end
+def key_and_data(first_recycle_bin)
+  first_recycle_bin.each do |key, value|
+    puts " The #{key} is #{value}"
+end
+end
 #Your code should work with a hash that looks like the one below (in comments).
 #The specs (which call your tests) are using these exact hashes 
 # We haven't hard coded the hashes in the tests, 
